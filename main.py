@@ -1,13 +1,4 @@
-'''
-Assume finding relationship between height and weight of people based on 3 data points
-y-axis = height
-x-axis = weight
-(x, y)
-(0.5, 1.4)
-(2.3, 1.9)
-(2.9, 3.2)
-'''
-
+# x, y value pairs
 data = [(0.5, 1.4), (2.3, 1.9), (2.9, 3.2)]
 
 learningRate = 0.01
@@ -18,6 +9,7 @@ derSlope = 0
 tries = 1
 sumError = 1
 
+# threshold of sum of error
 while sumError > 0.45:
     sumError = 0
     for point in data:
@@ -30,6 +22,7 @@ while sumError > 0.45:
         derSlope += (-2*x) * (actualY - (slope*x + intercept))
 
     print(f"sum of error: {sumError}")
+    
     stepSizeIntercept = derIntercept * learningRate
     stepSizeSlope = derSlope * learningRate
     print(f"sum of stepSizeSlope: {stepSizeSlope}")

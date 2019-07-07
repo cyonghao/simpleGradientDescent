@@ -1,6 +1,6 @@
-#Implementation of Gradient Descent on Linear Regression
+# Implementation of Gradient Descent on Linear Regression
 
-##Intro to Gradient Descent
+## Intro to Gradient Descent
 - y = mx + b
 - m = slope
 - b = intercept
@@ -10,7 +10,7 @@
 - using gradient to descend to the lowest point in the loss function (sum of the squared residuals)
 - gradient descent will stopped when either the step size is very small or completes number of tries specified
 
-##Steps of Gradient Descent
+## Steps of Gradient Descent
 1. find partial derivative form of linear line
 2. initialise random m, b values
 3. calculate partial derivative with respect to m, b
